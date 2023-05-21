@@ -24,6 +24,8 @@ persist.arm64.memtag.system_server=off
 
 # Display
 debug.force_no_blanking=true
+ro.surface_flinger.supports_background_blur=1
+ro.sf.blurs_are_expensive=1
 
 # FS-verity
 ro.apk_verity.mode=2
