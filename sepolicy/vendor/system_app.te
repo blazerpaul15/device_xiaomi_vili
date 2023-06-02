@@ -16,3 +16,7 @@ binder_call(system_app, hal_power_default)
 binder_call(system_app, hal_vibrator_default)
 binder_call(system_app, hal_wifi_supplicant_default)
 binder_call(system_app, wificond)
+
+# To allow Settings to find and bind Google Battery HAL
+allow system_app hal_googlebattery_service:service_manager find;
+binder_call(system_app, hal_googlebattery)

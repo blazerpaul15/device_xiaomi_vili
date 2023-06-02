@@ -3,6 +3,10 @@ binder_call(platform_app, vendor_hal_soter_qti)
 
 allow platform_app vendor_sys_video_prop:file { read };
 
+# allow SystemUI to find and bind Google Battery HAL
+allow platform_app hal_googlebattery_service:service_manager find;
+binder_call(platform_app, hal_googlebattery)
+
 # Camera Post Processing
 typeattribute platform_app halclientdomain;
 typeattribute platform_app vendor_hal_camerapostproc_xiaomi_client;
