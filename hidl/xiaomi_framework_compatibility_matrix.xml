@@ -1,27 +1,5 @@
 <compatibility-matrix version="1.0" type="framework">
     <hal format="hidl" optional="true">
-        <name>android.hardware.media.c2</name>
-        <version>1.0</version>
-        <interface>
-            <name>IComponentStore</name>
-            <instance>default</instance>
-            <instance>dolby</instance>
-            <instance>software</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>com.fingerprints.extension</name>
-        <version>3.0</version>
-        <interface>
-            <name>IFingerprintNavigation</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IFingerprintSensorTest</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.xiaomi.hardware.cameraperf</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -78,14 +56,6 @@
         <version>1.0</version>
         <interface>
             <name>IDtool</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>android.hardware.power</name>
-        <version>3</version>
-        <interface>
-            <name>IPower</name>
             <instance>default</instance>
         </interface>
     </hal>
