@@ -1609,6 +1609,10 @@ vendor/app/SoterService/SoterService.apk
 vendor/bin/mi_thermald
 vendor/lib64/libthermalclient.so
 
+# Thermal Service Client
+system_ext/lib/libthermalclient.qti.so
+system_ext/lib64/libthermalclient.qti.so
+
 # Thermal configs
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-class0.conf
