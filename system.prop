@@ -34,6 +34,9 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# Keyguard
+persist.wm.enable_remote_keyguard_animation=0
+
 # LMK
 ro.config.low_ram=false
 
