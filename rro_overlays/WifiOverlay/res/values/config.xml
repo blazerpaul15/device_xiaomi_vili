@@ -86,4 +86,7 @@
          channels this should be empty. Values is a comma separated channel string and/or channel
          range string like '1-6,11'. -->
     <string translatable="false" name="config_wifiSoftap2gChannelList"></string>
+
+    <!-- Do not translate. Default access point SSID used for tethering -->
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Xiaomi 11T Pro</string>
 </resources>

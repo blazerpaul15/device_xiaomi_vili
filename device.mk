@@ -467,10 +467,6 @@ PRODUCT_PACKAGES += \
     libjson \
     librmnetctl
 
-# RRO Overlays
-PRODUCT_PACKAGES += \
-    ViliWifiOverlay
-
 # Sensors
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
