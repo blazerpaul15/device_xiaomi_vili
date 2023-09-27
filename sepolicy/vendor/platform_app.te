@@ -11,10 +11,6 @@ binder_call(platform_app, hal_googlebattery)
 typeattribute platform_app halclientdomain;
 typeattribute platform_app vendor_hal_camerapostproc_xiaomi_client;
 
-# Dolby
-allow platform_app hal_dms_hwservice:hwservice_manager find;
-binder_call(platform_app, hal_dms_default)
-
 # Leica Camera
 binder_call(platform_app, hal_camera_default)
 get_prop(platform_app, vendor_display_prop)
