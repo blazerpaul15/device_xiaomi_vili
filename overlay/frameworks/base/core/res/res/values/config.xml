@@ -765,13 +765,6 @@
          from DOZE to ON, in millis. -->
     <integer name="config_wakeUpDelayDoze">32</integer>
 
-    <!-- The list of components which should be automatically disabled for a specific device.
-         Note: this MUST not be used to randomly disable components, ask for approval first! -->
-    <string-array name="config_deviceDisabledComponents" translatable="false">
-        <item>com.google.android.gms/com.google.android.gms.chimera.GmsIntentOperationService$PersistentTrustedReceiver</item>
-        <item>com.google.android.gms/com.google.android.gms.stats.service.DropBoxEntryAddedReceiver</item>
-    </string-array>
-
     <!-- True if the device supports Sustained Performance Mode-->
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
 
