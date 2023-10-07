@@ -190,10 +190,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
-# Fastcharge
-PRODUCT_PACKAGES += \
-    vendor.lineage.fastcharge@1.0-service.vili
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.vili \
@@ -306,17 +302,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
-# KProfiles
-PRODUCT_PACKAGES += \
-    KProfiles
-
 # Libgui
 PRODUCT_PACKAGES += \
     libgui_vendor
-
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
 
 # Media
 PRODUCT_PACKAGES += \
@@ -376,9 +364,6 @@ PRODUCT_PACKAGES += \
     libcodec2_soft_common.vendor \
     libsfplugin_ccodec_utils.vendor \
     libstagefright_softomx.vendor
-
-# MIUI Camera (Leica)
-$(call inherit-product-if-exists, vendor/xiaomi/vili-miuicamera/products/miuicamera.mk)
 
 # Network
 PRODUCT_COPY_FILES += \
@@ -537,10 +522,6 @@ ifeq ($(TARGET_USE_QTI_THERMAL_SERVICE),true)
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 endif
-
-# Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.vili
 
 # Touchscreen
 PRODUCT_COPY_FILES += \

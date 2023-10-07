@@ -106,6 +106,7 @@ TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/$(TARGET
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += androidboot.memcg=1
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
 BOARD_KERNEL_CMDLINE += cgroup.memory=nokmem,nosocket
 BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200n8
@@ -118,15 +119,6 @@ BOARD_KERNEL_CMDLINE += iptable_raw.raw_before_defrag=1
 BOARD_KERNEL_CMDLINE += ip6table_raw.raw_before_defrag=1
 BOARD_KERNEL_CMDLINE += firmware_class.path=/vendor/firmware
 BOARD_KERNEL_CMDLINE += kpti=off
-
-# Lineage Health
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/qcom-battery/input_suspend
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED := 0
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED := 1
-TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
-
-# MIUI Camera (Leica)
--include vendor/xiaomi/vili-miuicamera/products/board.mk
 
 # OTA Assert
 TARGET_OTA_ASSERT_DEVICE := vili
@@ -191,6 +183,7 @@ VENDOR_SECURITY_PATCH := 2023-09-01
 
 # Sepolicy
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
+SELINUX_IGNORE_NEVERALLOWS := true
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public

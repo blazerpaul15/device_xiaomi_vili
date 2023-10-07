@@ -1,5 +1,2 @@
-# Allow init to set attribute to sysfs_kprofiles
-allow init sysfs_kprofiles:file { setattr };
-
 allow init adsprpcd_file:file mounton;
 allow init hal_fingerprint_default:process { ptrace };

@@ -9,7 +9,7 @@
 /mnt/vendor/persist/subsys(/.*)?                u:object_r:persist_subsys_file:s0
 
 # Camera
-/mnt/vendor/persist/camera(/.*)?   u:object_r:camera_persist_file:s0
+/mnt/vendor/persist/camera(/.*)?                            u:object_r:camera_persist_file:s0
 # Temporary hacky solution
 /vendor/lib(/.*)?                                           u:object_r:same_process_hal_file:s0
 /vendor/lib64(/.*)?                                         u:object_r:same_process_hal_file:s0
@@ -20,9 +20,6 @@
 # Dolby
 /data/vendor/dolby(/.*)?                                                                                u:object_r:vendor_data_file:s0
 /(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service                                u:object_r:hal_dms_default_exec:s0
-
-# Fastcharge HAL
-/(vendor|system/vendor)/bin/hw/vendor\.lineage\.fastcharge@[0-9]\.[0-9]-service\.vili                   u:object_r:hal_lineage_fastcharge_default_exec:s0
 
 # Fingerprint
 /dev/goodix_fp                                                      u:object_r:vendor_fingerprint_device:s0
@@ -86,9 +83,6 @@
 # Thermal
 /data/vendor/thermal(/.*)?                           u:object_r:thermal_data_file:s0
 /vendor/bin/mi_thermald                              u:object_r:mi_thermald_exec:s0
-
-# Touch
-/vendor/bin/hw/vendor\.lineage\.touch@1\.0-service\.vili                                                u:object_r:hal_lineage_touch_default_exec:s0
 
 # Vibrator
 /vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.xiaomi                                         u:object_r:hal_vibrator_default_exec:s0

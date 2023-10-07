@@ -166,12 +166,6 @@ on boot
     chown system /sys/devices/system/cpu/hyp_core_ctl/enable
     chown system /sys/devices/system/cpu/hyp_core_ctl/hcc_min_freq
 
-    # Allow system to manipulate KProfiles modes and parameters
-    chown system system /sys/module/kprofiles/parameters/auto_kp
-    chmod 0660 /sys/module/kprofiles/parameters/auto_kp
-    chown system system /sys/kernel/kprofiles/kp_mode
-    chmod 0660 /sys/kernel/kprofiles/kp_mode
-
     write /sys/block/sda/queue/wbt_lat_usec 75000
 
 on init && property:ro.boot.mode=charger
