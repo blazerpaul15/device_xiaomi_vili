@@ -796,6 +796,7 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/hw/consumerir.lahaina.so
 
 # Diag HAL
+system_ext/lib64/vendor.qti.diaghal@1.0.so
 -vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
 vendor/bin/diag-router
 vendor/etc/init/vendor.qti.diag.rc
@@ -1081,17 +1082,6 @@ system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|99cfd80
 system_ext/framework/com.android.hotwordenrollment.common.util.jar|9ad8db8e39c477fcc298f109ab39022c1970167e
 
 # IMS
-system_ext/lib64/lib-imsvideocodec.so
-system_ext/lib64/lib-imsvt.so
-system_ext/lib64/lib-imsvtextutils.so
-system_ext/lib64/lib-imsvtutils.so
-system_ext/lib64/libdiag_system.so
-system_ext/lib64/libimscamera_jni.so
-system_ext/lib64/libimsmedia_jni.so
-system_ext/lib64/vendor.qti.diaghal@1.0.so
-system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
-system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
-system_ext/priv-app/ims/ims.apk|3c6f0bfeba8ecda785b9dc7b707faf3f5a461058
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdaemon
 vendor/etc/init/ims_rtp_daemon.rc
@@ -1134,6 +1124,34 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
+
+# IMS - from LA.QSSI.13.0.r1-10000.02-qssi.0
+system_ext/app/ImsRcsService/ImsRcsService.apk|a52299c150e042c0b8b7a1ea8b26096e9c66ac98
+system_ext/app/QtiTelephony/QtiTelephony.apk|4e1470c1485142d626b78656aa96d6df1b597b12
+system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml|a7e114ea1e6909685ce49717a2b5b66d8275d419
+system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml|be8a9d8c0c2e35fb9cb562d12cdf6012c3b67da4|7ce9e6ccb5026b0aa87b0eb94a20448e2d4c481c
+system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml|fce4e18c6568c289d4ff145c03a0c474ff55972a
+system_ext/etc/sysconfig/qti_whitelist_system_ext.xml|fc930929bee7d1f8ecc5b1c76193acdc2f923fe7
+system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar|fe79bf81285840830e8eaacce7efec0a3f501d84
+system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar|a2243ce7157ff77507e90c7c043c26e56cdd2ec3
+system_ext/framework/vendor.qti.ims.factory-V2.1-java.jar|c8f27675d6f1c83a89b1334fd86697d99471727a
+system_ext/framework/vendor.qti.ims.factory-V2.2-java.jar|3b76082044d29a4ffbea1b7bd5ef8f2a8f71369e
+system_ext/framework/vendor.qti.ims.rcssip-V1.0-java.jar|617a289b1c14d913ab4e43295296e07e0841db74
+system_ext/framework/vendor.qti.ims.rcssip-V1.1-java.jar|ce4a1219654a29b08985d4a56370ee7260a46f9f
+system_ext/framework/vendor.qti.ims.rcssip-V1.2-java.jar|cf7169522f3e94043f6e136cce037467646cd444
+system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar|53e0696f5f15f26ce7a68a4f4b304f426f447644
+system_ext/framework/vendor.qti.ims.rcsuce-V1.1-java.jar|1aacd3ff385e32c6a143a2c65b31b21a2b80e8df
+system_ext/framework/vendor.qti.ims.rcsuce-V1.2-java.jar|4dc1b0f7afb2df9a41cd341296913941014388fd
+system_ext/lib64/lib-imsvideocodec.so|eb70a60fc143ab65718fa3333c845490120c9a23
+system_ext/lib64/lib-imsvt.so|dcf23823c74ae9844b6a5317f798b993c45b2e41
+system_ext/lib64/lib-imsvtextutils.so|1dfb5640cd23a92e7ca55a84118b2966653aebc7
+system_ext/lib64/lib-imsvtutils.so|67ce2fc38fbf819e397b19e1ff46c70183e890d2
+system_ext/lib64/libdiag_system.so|77562f2b9a3bcbf7ce8106446c1cf2443c28accc
+system_ext/lib64/libimscamera_jni.so|a21333fa8f338acaa4996f74a0e29145f77d5299
+system_ext/lib64/libimsmedia_jni.so|e9e9a28e266f8e19f2a01c0bfaaf19b39ac1fdfb
+system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|ace5e02b6cd79b43a07d84e2d18d6818821a3c48
+system_ext/lib64/vendor.qti.imsrtpservice@3.1.so|e64aa8a21a8db69d2e2ea14929bb20ced99c119d
+system_ext/priv-app/ims/ims.apk|446d0285830d87f96d9a9054873a7e17dc8ef7ff
 
 # IPA firmware
 vendor/etc/init/ipa_fws.rc
