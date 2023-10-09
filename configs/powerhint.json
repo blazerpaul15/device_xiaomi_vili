@@ -15,7 +15,7 @@
       "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
-        "691200"
+        "300000"
       ],
       "ResetOnInit": true
     },
@@ -52,7 +52,6 @@
       "Path": "/sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq",
       "Values": [
         "9999999",
-        "1881600",
         "710400"
       ],
       "ResetOnInit": true
@@ -116,10 +115,8 @@
       "Name": "UclampTAMin",
       "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
       "Values": [
-        "26",
         "0",
         "30",
-	"35",
         "45"
       ],
       "DefaultIndex": 0,
@@ -282,15 +279,15 @@
     },
     {
       "PowerHint": "INTERACTION",
-      "Node": "UclampTALatency",
+      "Node": "UclampTAMin",
       "Duration": 1000,
-      "Value": "1"
+      "Value": "30"
     },
     {
       "PowerHint": "INTERACTION",
-      "Node": "CPUBigClusterMinFreq",
+      "Node": "UclampTALatency",
       "Duration": 1000,
-      "Value": "1881600"
+      "Value": "1"
     },
     {
       "PowerHint": "INTERACTION",
@@ -429,12 +426,6 @@
       "Node": "GPUMaxFreq",
       "Duration": 0,
       "Value": "540000000"
-    },
-    {
-      "PowerHint": "DISPLAY_INACTIVE",
-      "Node": "UclampTAMin",
-      "Duration": 0,
-      "Value": "0"
     },
     {
       "PowerHint": "Flipendo",
