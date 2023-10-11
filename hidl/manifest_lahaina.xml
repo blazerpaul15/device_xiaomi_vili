@@ -236,6 +236,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
+
     <!-- RIL AUDIO HAL -->
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.am</name>
@@ -247,6 +248,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>slot2</instance>
         </interface>
     </hal>
+
     <!-- radio ims -->
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.ims</name>
@@ -258,6 +260,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>imsradio1</instance>
         </interface>
     </hal>
+
     <!-- dpm QMI hal service -->
     <hal format="hidl">
         <name>com.qualcomm.qti.dpm.api</name>
@@ -268,6 +271,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>dpmQmiService</instance>
         </interface>
     </hal>
+
     <!-- qcrilhook -->
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.qcrilhook</name>
@@ -279,6 +283,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>oemhook1</instance>
         </interface>
     </hal>
+
     <!-- RIL UIM REMOTE CLIENT -->
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.uim_remote_client</name>
@@ -290,6 +295,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>uimRemoteClient1</instance>
         </interface>
     </hal>
+
     <!-- RIL UIM REMOTE SERVER -->
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.uim_remote_server</name>
@@ -301,6 +307,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>uimRemoteServer1</instance>
         </interface>
     </hal>
+
     <!-- RIL UIM LPA -->
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.lpa</name>
@@ -312,6 +319,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>UimLpa1</instance>
         </interface>
     </hal>
+
     <!-- RIL UIM -->
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.uim</name>
@@ -323,6 +331,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>Uim1</instance>
         </interface>
     </hal>
+
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.qtiradio</name>
         <transport>hwbinder</transport>
@@ -333,6 +342,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>slot2</instance>
         </interface>
     </hal>
+
     <!-- deviceInfo HAL -->
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.internal.deviceinfo</name>
@@ -343,6 +353,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                <instance>deviceinfo</instance>
            </interface>
     </hal>
+
    <!-- IMS RTP Service -->
     <hal format="hidl">
         <name>vendor.qti.imsrtpservice</name>
@@ -422,6 +433,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
           <instance>default</instance>
       </interface>
     </hal>
+
     <hal format="hidl">
       <name>android.hardware.tetheroffload.control</name>
       <transport>hwbinder</transport>
@@ -498,6 +510,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
+
     <!-- fm -->
     <hal format="hidl">
         <name>vendor.qti.hardware.fm</name>
@@ -539,6 +552,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
+
     <!-- Camera PostProcessing service -->
     <hal format="hidl">
         <name>vendor.qti.hardware.camera.postproc</name>
@@ -549,6 +563,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>camerapostprocservice</instance>
         </interface>
     </hal>
+
     <hal format="hidl">
         <name>android.hardware.camera.provider</name>
         <transport>hwbinder</transport>
@@ -558,6 +573,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>legacy/0</instance>
         </interface>
     </hal>
+
     <!-- BluetoothSar service-->
     <hal format="hidl">
         <name>vendor.qti.hardware.bluetooth_sar</name>
@@ -576,15 +592,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <interface>
             <name>IMwqemAdapter</name>
             <instance>MwqemAdapter</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.dolby.hardware.dms</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IDms</name>
-            <instance>default</instance>
         </interface>
     </hal>
 </manifest>
