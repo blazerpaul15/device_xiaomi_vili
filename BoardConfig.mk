@@ -105,7 +105,6 @@ TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/$(TARGET
 BOARD_KERNEL_CMDLINE += androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += androidboot.memcg=1
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a600000.dwc3
 BOARD_KERNEL_CMDLINE += cgroup.memory=nokmem,nosocket
 BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200n8
@@ -186,7 +185,6 @@ VENDOR_SECURITY_PATCH := 2023-09-01
 
 # Sepolicy
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
-SELINUX_IGNORE_NEVERALLOWS := true
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
