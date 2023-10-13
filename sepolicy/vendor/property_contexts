@@ -7,9 +7,6 @@ ro.boot.camera.config     u:object_r:vendor_camera_sensor_prop:s0
 persist.camera.           u:object_r:vendor_camera_prop:s0
 persist.vendor.low.cutoff u:object_r:vendor_camera_prop:s0
 
-# Dtool
-vendor.dtool.             u:object_r:vendor_fp_prop:s0
-
 # Fingerprint
 persist.vendor.sys.fp.        u:object_r:vendor_fp_prop:s0
 persist.vendor.sys.fp.info    u:object_r:vendor_fp_info_prop:s0
