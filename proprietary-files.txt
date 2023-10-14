@@ -848,22 +848,6 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
-# Media (Dolby Vision) - from star V13.0.5.0.SKAEUXM
-vendor/bin/hw/dolbycodec2|5da57f0965cedbeae755ba6a7195b3d87e6cd9f5
-vendor/etc/dolby_vision.cfg|6f7476b07203b090fc5245a36ad6b3f463a4bc5b
-vendor/etc/init/dolbycodec2.rc|1ea8b363e94fd4f5410cadceb30de8229fb38045
-vendor/lib/c2.dolby.avc.dec.so|46d92835722ec8bee6160ecbd74f4876b9605cdb
-vendor/lib/c2.dolby.avc.sec.dec.so|df128db1afa1527b28c6188e414f3f79ecb30293
-vendor/lib/c2.dolby.client.so|33b96ef37f0708f44b3726ef376bc64722d2ed58
-vendor/lib/c2.dolby.egl.so|8d1710568a36178e1742113668626d37d8173c8a
-vendor/lib/c2.dolby.hevc.dec.so|3c1eafc7feffad3bb2279ef027b5d3a441306227
-vendor/lib/c2.dolby.hevc.sec.dec.so|664f12c499bc236628b92d1179e0290b0b5b1bf7
-vendor/lib/c2.dolby.store.so|08d26054d08062a508e53ad2751baa8590a6d3cf
-vendor/lib/libcodec2_hidl@1.0.so:vendor/lib/libcodec2_hidl@1.0.stock.so|a46bc3a7d782515ec5a5e990912e2bd57ccf131b
-vendor/lib/libcodec2_vndk.so:vendor/lib/libcodec2_vndk.stock.so|39eb5d1c5f96156409fef2cd0b9912c501291713
-vendor/lib/libdolbyottcameracontrol.so|3758b2541004c5d9a2935ed134afbabb66d6a315
-vendor/lib/libdovi.so|185d52f232cfd2ec7156ee5103593ac12f04cb1f
-
 # DPM
 system/framework/tcmclient.jar
 system_ext/bin/dpmd
