@@ -1,0 +1,1 @@
+allow mediacodec fwk_sensor_hwservice:hwservice_manager find;
