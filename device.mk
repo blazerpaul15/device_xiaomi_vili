@@ -430,6 +430,7 @@ PRODUCT_COPY_FILES += \
 
 # Protobuf - Workaround for prebuilt Qualcomm HAL
 PRODUCT_PACKAGES += \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat \
     libprotobuf-cpp-full-3.9.1-vendorcompat
 
 # QTI
