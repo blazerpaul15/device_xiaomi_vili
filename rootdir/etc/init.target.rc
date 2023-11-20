@@ -110,9 +110,6 @@ on post-fs-data
     mkdir /data/vendor/wlan_logs 0777 root shell
     mkdir /data/vendor/nfc 0777 nfc nfc
 
-    # Create folder of cameralog
-    mkdir /data/vendor/camera/offlinelog 0777 cameraserver audio
-
     # Dolby
     mkdir /data/vendor/dolby 0770 media media
     mkdir /data/vendor/multimedia 0775 system system
