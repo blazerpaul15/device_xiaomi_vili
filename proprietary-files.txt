@@ -849,7 +849,7 @@ vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
 # Media (Dolby Vision) - from star V13.0.5.0.SKAEUXM
-vendor/bin/hw/dolbycodec2|5da57f0965cedbeae755ba6a7195b3d87e6cd9f5
+vendor/bin/hw/dolbycodec2|c60325b50eb5e520fea3f61d2bdeae9dc5d2d92a
 vendor/etc/dolby_vision.cfg|6f7476b07203b090fc5245a36ad6b3f463a4bc5b
 vendor/etc/init/dolbycodec2.rc|1ea8b363e94fd4f5410cadceb30de8229fb38045
 vendor/lib/c2.dolby.avc.dec.so|46d92835722ec8bee6160ecbd74f4876b9605cdb
