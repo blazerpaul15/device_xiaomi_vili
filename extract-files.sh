@@ -58,11 +58,6 @@ function blob_fixup() {
         system_ext/lib64/libwfdnative.so)
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
             ;;
-        vendor/bin/hw/dolbycodec2)
-            patchelf --replace-needed libavservices_minijail_vendor.so libavservices_minijail.so "${2}"
-            patchelf --replace-needed libcodec2_hidl@1.0.so libcodec2_hidl@1.0.stock.so "${2}"
-            patchelf --add-needed "libshim.so" "${2}"
-            ;;
         vendor/etc/camera/pureShot_parameter.xml \
         |vendor/etc/camera/pureView_parameter.xml)
             sed -i 's/=\([0-9]\+\)>/="\1">/g' "${2}"
@@ -72,13 +67,6 @@ function blob_fixup() {
 	    ;;
         vendor/etc/msm_irqbalance.conf)
             sed -i "s/IGNORED_IRQ=27,23,38$/&,115,332/" "${2}"
-            ;;
-        vendor/lib/libcodec2_hidl@1.0.stock.so)
-            patchelf --set-soname libcodec2_hidl@1.0.stock.so "${2}"
-            patchelf --replace-needed libcodec2_vndk.so libcodec2_vndk.stock.so "${2}"
-            ;;
-        vendor/lib/libcodec2_vndk.stock.so)
-            patchelf --set-soname libcodec2_vndk.stock.so "${2}"
             ;;
         vendor/lib64/hw/camera.qcom.so)
             sed -i "s/\x73\x74\x5F\x6C\x69\x63\x65\x6E\x73\x65\x2E\x6C\x69\x63/\x63\x61\x6D\x65\x72\x61\x5F\x63\x6E\x66\x2E\x74\x78\x74/g" "${2}"
