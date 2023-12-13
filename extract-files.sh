@@ -71,6 +71,9 @@ function blob_fixup() {
         vendor/lib64/c2.dolby.avc.dec.so | vendor/lib64/c2.dolby.avc.sec.dec.so | vendor/lib64/c2.dolby.egl.so | vendor/lib64/c2.dolby.hevc.dec.so | vendor/lib64/c2.dolby.hevc.enc.so | vendor/lib64/c2.dolby.hevc.sec.dec.so | vendor/lib64/libdolbyvision.so | vendor/lib/libcodec2_soft_common.so | vendor/lib/libsfplugin_ccodec_utils.so)
             "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
             ;;
+        vendor/lib/libstagefright_soft_ac4dec.so | vendor/lib/libstagefright_soft_ddpdec.so | vendor/lib/libstagefrightdolby.so | vendor/lib64/libdlbdsservice.so | vendor/lib64/libstagefright_soft_ac4dec.so | vendor/lib64/libstagefright_soft_ddpdec.so | vendor/lib64/libstagefrightdolby.so)
+            grep -q "libstagefright_foundation-v33.so" "${2}" || "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
+            ;;
         vendor/lib/libcodec2_hidl@1.0.stock.so)
             "${PATCHELF}" --set-soname libcodec2_hidl@1.0.stock.so "${2}"
             "${PATCHELF}" --replace-needed libcodec2_vndk.so libcodec2_vndk.stock.so "${2}"
