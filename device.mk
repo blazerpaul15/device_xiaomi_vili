@@ -367,9 +367,6 @@ PRODUCT_PACKAGES += \
 # Miui Camera (Leica)
 $(call inherit-product-if-exists, vendor/xiaomi/vili-miuicamera/miuicamera.mk)
 
-# Moto Dolby
-$(call inherit-product, vendor/motorola//dolby/dolby-vendor.mk)
-
 # Network
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
