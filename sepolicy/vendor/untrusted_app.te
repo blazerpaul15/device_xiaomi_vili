@@ -1,3 +1,5 @@
+allow untrusted_app vendor_diag_device:chr_file rw_file_perms;
+
 # To get signature of an APK installed on Incremental File System, and fill in data
 # blocks and get the filesystem state
 allowxperm untrusted_app apk_data_file:file ioctl {
