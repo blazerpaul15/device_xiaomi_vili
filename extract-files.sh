@@ -73,7 +73,7 @@ function blob_fixup() {
         vendor/etc/msm_irqbalance.conf)
             sed -i "s/IGNORED_IRQ=27,23,38$/&,115,332/" "${2}"
             ;;
-        vendor/lib/c2.dolby.avc.dec.so | vendor/lib/c2.dolby.avc.sec.dec.so | vendor/lib/c2.dolby.hevc.dec.so | vendor/lib/c2.dolby.hevc.sec.dec.so | vendor/lib/libdovi.so)
+        vendor/lib/c2.dolby.avc.dec.so | vendor/lib/c2.dolby.avc.sec.dec.so | vendor/lib/c2.dolby.hevc.dec.so | vendor/lib/c2.dolby.hevc.sec.dec.so | vendor/lib/libdovi.so | vendor/lib/libcodec2_soft_common.so | vendor/lib/libsfplugin_ccodec_utils.so)
             "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
             ;;
         vendor/lib/libcodec2_hidl@1.0.stock.so)
