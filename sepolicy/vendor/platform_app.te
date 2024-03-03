@@ -3,17 +3,11 @@ binder_call(platform_app, vendor_hal_soter_qti)
 
 allow platform_app vendor_sys_video_prop:file { read };
 
-# Camera Post Processing
-typeattribute platform_app halclientdomain;
-typeattribute platform_app vendor_hal_camerapostproc_xiaomi_client;
-
 # Leica Camera
-binder_call(platform_app, hal_camera_default)
 get_prop(platform_app, vendor_display_prop)
 get_prop(platform_app, vendor_camera_sensor_prop)
 allow platform_app vendor_hal_camerapostproc_xiaomi_hwservice:hwservice_manager find;
-allow platform_app app_data_file:file { execute };
-allow platform_app proc_stat:file { open read };
+binder_call(platform_app, vendor_hal_camerapostproc_xiaomi)
 
 # Dolby
 allow platform_app hal_dms_hwservice:hwservice_manager find;
