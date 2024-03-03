@@ -1,5 +1,0 @@
-dontaudit {
-  devicesettings_app
-  hal_camera_default
-  rild
-} default_prop:file r_file_perms;
