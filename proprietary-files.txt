@@ -121,16 +121,21 @@ vendor/lib64/soundfx/libshoebox.so
 vendor/lib/hw/audio.primary.lahaina.so
 vendor/lib/liba2dpoffload.so
 vendor/lib/libadm.so
+vendor/lib/libaudioalsa.so
 vendor/lib/libaudiocloudctrl.so
+vendor/lib/libaudioconfigstore.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioparsers.so
 vendor/lib/libaudioroute_ext.so
 vendor/lib/libbatterylistener.so
+vendor/lib/libcomprcapture.so
+vendor/lib/libexthwplugin.so
 vendor/lib/libhdmiedid.so
 vendor/lib/libhdmipassthru.so
 vendor/lib/libhfp.so
 vendor/lib/libresampler.so
 vendor/lib/libsndmonitor.so
+vendor/lib/libspkrprot.so
 vendor/lib/libssrec.so
 vendor/lib/libvideoNS.so
 
@@ -282,6 +287,7 @@ vendor/lib64/libmibokeh_mask.so
 vendor/lib64/libmibokeh_mask_dsp.so
 vendor/lib64/libmiphone_capture_bokeh.so
 vendor/lib64/libmiphone_preview_bokeh.so
+vendor/lib64/libmm-color-convertor.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libnanopb.so
 vendor/lib64/libofflinedump.so
@@ -313,6 +319,7 @@ vendor/lib64/libtriplecam_optical_zoom_control.so
 vendor/lib64/libthreadutils.so
 vendor/lib64/libvideoBokeh.so
 vendor/lib64/libvideofilter_only.so
+vendor/lib64/libvideooptfeature.so
 vendor/lib64/libvidhance.so
 vendor/lib64/libwa_opticalzoom_fusion.so
 vendor/lib64/libwa_opticalzoomfactor.so
