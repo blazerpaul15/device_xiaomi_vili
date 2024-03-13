@@ -47,38 +47,28 @@
         </receiver>
 
         <activity
-            android:name=".dolby.DolbyActivity"
-            android:label="@string/dolby_title"
-            android:exported="true">
+            android:name=".dirac.DiracActivity"
+            android:label="@string/dirac_title">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
-                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES"/>
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.media.action.DISPLAY_AUDIO_EFFECT_CONTROL_PANEL" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.CATEGORY_CONTENT_MUSIC" />
             </intent-filter>
             <meta-data android:name="com.android.settings.category"
                        android:value="com.android.settings.category.ia.sound" />
-            <meta-data android:name="com.android.settings.summary_uri"
-                       android:value="content://org.lineageos.settings.device.summary/dolby" />
+            <meta-data android:name="com.android.settings.summary"
+                       android:resource="@string/dirac_summary" />
         </activity>
 
-        <provider
-            android:name=".SummaryProvider"
-            android:authorities="org.lineageos.settings.device.summary">
-        </provider>
-
         <service
-            android:name=".dolby.DolbyTileService"
-            android:icon="@drawable/ic_dolby_qs"
-            android:label="@string/dolby_title"
+            android:name=".dirac.DiracTileService"
             android:exported="true"
+            android:icon="@drawable/ic_headphone"
+            android:label="@string/dirac_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE"/>
             </intent-filter>
+            <meta-data android:name="android.service.quicksettings.TOGGLEABLE_TILE"
+            android:value="true" />
         </service>
 
         <activity

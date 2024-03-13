@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2018 The LineageOS Project
+ * Copyright (C) 2018-2022 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,22 +14,22 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.dolby;
+package org.lineageos.settings.dirac;
 
 import android.os.Bundle;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
 import com.android.settingslib.widget.R;
 
-public class DolbyActivity extends CollapsingToolbarBaseActivity {
+public class DiracActivity extends CollapsingToolbarBaseActivity {
 
-    private static final String TAG_DOLBY = "dolby";
+    private static final String TAG_DIRAC = "dirac";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         getFragmentManager().beginTransaction().replace(R.id.content_frame,
-                new DolbySettingsFragment(), TAG_DOLBY).commit();
+                new DiracSettingsFragment(), TAG_DIRAC).commit();
     }
 }

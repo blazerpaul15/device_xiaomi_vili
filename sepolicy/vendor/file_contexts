@@ -41,10 +41,6 @@
 # (e.g. Google Camera App)
 /mnt/vendor/dsp/fastrpc_shell_3 u:object_r:public_adsprpcd_file:s0
 
-# Dolby
-/data/vendor/dolby(/.*)?   u:object_r:vendor_data_file:s0
-/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service                                        u:object_r:hal_dms_default_exec:s0
-
 # IR
 /dev/ir_spi                                      u:object_r:ir_spi_device:s0
 

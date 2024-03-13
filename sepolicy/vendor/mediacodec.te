@@ -2,7 +2,3 @@ allow mediacodec fwk_sensor_hwservice:hwservice_manager find;
 
 get_prop(mediacodec, graphics_config_writable_prop)
 get_prop(mediacodec, graphics_config_prop)
-
-# Dolby
-allow mediacodec hal_dms_hwservice:hwservice_manager find;
-allow mediacodec hal_dms_default:binder { call transfer };
