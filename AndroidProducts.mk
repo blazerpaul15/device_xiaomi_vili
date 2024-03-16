@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_vili.mk
+    $(LOCAL_DIR)/aosp_vili.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_vili-user \
-    evolution_vili-userdebug \
-    evolution_vili-eng
+    aosp_vili-user \
+    aosp_vili-userdebug \
+    aosp_vili-eng
